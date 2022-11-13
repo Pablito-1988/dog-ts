@@ -1,0 +1,55 @@
+.slider{  
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  
+}
+
+.slider ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 400%;
+}
+.slider li {
+    list-style: none;
+    width: 100%;  
+} 
+.slider img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;  
+}
+.dotsWrapper{
+  width: 100%;
+}
+
+.container-dots {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+   
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 3px solid #f1f1f1;
+    margin: 0 6px;
+    background: black;
+  }
+  .dot.active {
+    background: #31da49
+  }
+  .slide {
+      
+     position: absolute; 
+     opacity: 0;
+    transition: opacity ease-in-out 0.4s;  
+    ; 
+  }
+  .active-anim {
+  opacity: 1;
+}

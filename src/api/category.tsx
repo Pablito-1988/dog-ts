@@ -37,3 +37,4 @@ export const getAllCategories = async ()=>{
       return response
      
 }
+
