@@ -4,6 +4,8 @@ import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 import  Contact  from '../pages/Contact'
 import { Main } from '../pages/Main'
+import { Products } from '../pages/Products'
+import { ProductDetail } from '../components/ProductDetail'
 
 export const Routes = () => {
     return (
@@ -13,6 +15,8 @@ export const Routes = () => {
         <Switch>
             <Route path={'/'} exact component={Main} />
             <Route path={'/contacto'} component={Contact}/>
+            <Route path="/categoria/:categoria" component={Products} />
+            <Route path="/producto/:producto" component={ProductDetail} />
         </Switch>
         <Footer />
     </>

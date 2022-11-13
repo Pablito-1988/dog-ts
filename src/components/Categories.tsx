@@ -1,5 +1,5 @@
 import { useQuery } from "react-query";
-import { getAllCategories } from "../api/category";
+import { getAllCategories } from "../api/categoryApi";
 import { Link } from 'react-router-dom'
 import "../styles/Products.css"
 
