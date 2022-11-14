@@ -5,10 +5,12 @@ import { Slider } from '../components/Slider'
 export const Main = () => {
   return (
     <>
-        <div>Hola soy main</div>
-        <Slider/>
-        <Categories/>
+      <div >
+        <Slider />
+        <Categories />
+      </div>
+
     </>
-    
+
   )
 }
