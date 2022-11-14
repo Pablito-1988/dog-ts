@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/ContactStyle.css'
+import '../styles/ContactStyles.css'
 import emailjs from '@emailjs/browser'
 
 export default function Contact () {

@@ -1,7 +1,7 @@
 import { useQuery } from "react-query";
 import { getAllCategories } from "../api/categoryApi";
 import { Link } from 'react-router-dom'
-import "../styles/Products.css"
+import "../styles/ProductsStyle.css"
 
 const Categories = () => {
 

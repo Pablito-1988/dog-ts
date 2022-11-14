@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useQuery } from 'react-query'
 import { getProductDetail } from "../api/productsApi"
 import {Link} from 'react-router-dom'
+import "../styles/ProductsStyle.css"
 
 export const ProductDetail = () => {
     const item = useParams();

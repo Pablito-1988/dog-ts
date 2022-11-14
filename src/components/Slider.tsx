@@ -2,7 +2,7 @@ import React from 'react'
 import { useQuery } from 'react-query'
 import { getSliderImg } from '../api/sliderApi'
 import { useEffect, useState } from "react";
-import '../styles/Slider.css'
+import '../styles/SliderStyles.css'
 
 export const Slider = () => {
   const { data,

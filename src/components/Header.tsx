@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from "react";
 import Dropdown from './DropDown';
-import '../styles/Header.css'
+import '../styles/HeaderStyles.css'
 
 
 

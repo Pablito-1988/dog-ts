@@ -3,7 +3,7 @@ import { Product } from '../components/Product'
 import { useParams } from "react-router-dom";
 import { getAllProducts } from "../api/productsApi"
 import { useQuery } from 'react-query'
-import "../styles/Products.css"
+import "../styles/ProductsStyle.css"
 
 export const Products = () => {
   const category = useParams();
