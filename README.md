@@ -12,7 +12,7 @@ E-commerce dedicado a la venta de productos para el cultivo, focalizado principa
 
    Para posicionarse en el directorio donde se encuentra el proyecto.
 
-3. ### npmi
+3. ### npm i
 
    Para instalar las dependencias requeridas para el correcto funcionamiento del proyecto, recordá siempre estar en la carpeta correcta!
 

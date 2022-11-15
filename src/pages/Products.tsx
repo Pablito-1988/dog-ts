@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { getAllProducts } from "../api/productsApi"
 import { useQuery } from 'react-query'
 import "../styles/ProductsStyle.css"
-import {ArrayofProducts} from '../types/ProductPropsTypes'
+import {ArrayofProducts} from '../types/ProductTypes'
 
 
 export const Products = () => {

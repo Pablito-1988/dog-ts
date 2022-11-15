@@ -14,3 +14,16 @@ export type ArrayofProducts = {
             url: string
         }
 }
+
+export type ProductDetailType ={
+    info:{
+        price: number
+        productCategory: string
+        productDescription: string
+        productName: string
+        productMainImg:{
+            title:string
+            url: string
+        }
+    }
+}

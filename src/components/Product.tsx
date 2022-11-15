@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import "../styles/ProductsStyle.css"
-import {Props} from '../types/ProductPropsTypes'
+import {Props} from '../types/ProductTypes'
 
 
 

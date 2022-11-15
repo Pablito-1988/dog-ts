@@ -15,10 +15,7 @@ const Dropdown = (props) => {
             nombre: 'CONTACTO',
             ruta: '/contacto'
         },
-        {
-            nombre: 'NOSOTROS',
-            ruta: '/'
-        }
+        
     ]
 
     return (
