@@ -3,14 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Dropdown = (props) => {
     const menuLInks = [
-       /*  {
-            nombre: 'CATALOGO',
-            ruta: '/'
-        },
         {
-            nombre: 'EDU',
-            ruta: '/'
-        }, */
+            nombre:'CATALOGO',
+            ruta:'/'
+        },
         {
             nombre: 'PUNTOS DE VENTA',
             ruta: '/puntos-de-venta'

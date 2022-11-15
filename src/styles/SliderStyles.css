@@ -30,6 +30,8 @@
     flex-direction: row;
     width: 100%;
     justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
    
   }
   .dot {

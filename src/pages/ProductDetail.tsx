@@ -10,7 +10,6 @@ export const ProductDetail = () => {
     const { data,
         isLoading,
     } = useQuery(["detail"], () => getProductDetail(item))
-    console.log(data)
 
     if (isLoading) {
         return (

@@ -11,7 +11,7 @@ export const Products = () => {
     isLoading,
   } = useQuery(["products"],()=> getAllProducts(category))
   
-
+ 
   if (isLoading) {
     return (
       <>

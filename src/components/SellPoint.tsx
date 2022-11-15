@@ -1,5 +1,7 @@
+
+
 const SellPoint = (props) => {
-    const data = props.info;
+    const {info : data } = props;
     if (!data) {
       return (
         <>

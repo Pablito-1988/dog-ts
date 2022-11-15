@@ -1,3 +1,5 @@
+
+
 const spaceId = "f5klpei59l37";
 const accessToken = "qFP0gtMR5kSIym8b9moI0USNmXys6etjPY2_jDNGTjQ";
 const query = `query{
@@ -8,13 +10,13 @@ const query = `query{
             email
             instagram
             location{
-              lat
-              lon
+                    lat
+                    lon
             }
             web
             phone
             map{
-              url
+                url
             }
             
           }
@@ -22,8 +24,8 @@ const query = `query{
         
       }`;
 
-export const getAllSellPoints = async () => {
-    const response = fetch(`https://graphql.contentful.com/content/v1/spaces/${spaceId}/`, {
+export const getAllSellPoints =  () => {
+    const response  = fetch(`https://graphql.contentful.com/content/v1/spaces/${spaceId}/`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

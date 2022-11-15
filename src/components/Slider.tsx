@@ -8,9 +8,9 @@ export const Slider = () => {
   const { data,
     isLoading,
   } = useQuery(["slider"], getSliderImg)
-
-  const [slideIndex, setSlideIndex] = useState(1);
-  const [sliderTime, setSliderTime] = useState(5000);
+ console.log(data)
+  const [slideIndex, setSlideIndex] = useState<number>(1);
+  const [sliderTime, setSliderTime] = useState<number>(5000);
 
   const moveDot = (index) => {
     setSlideIndex(index);
