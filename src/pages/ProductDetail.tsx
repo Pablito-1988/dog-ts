@@ -40,7 +40,6 @@ export const ProductDetail = () => {
                                 alt={data[0].productCategory}
                             />
                         </div>
-                        {/* <span className="divisor"></span> */}
                         <div className="productData">
                             <p className="productName">{data[0].productName}</p>
                             <p className="productName">${data[0].price}</p>
