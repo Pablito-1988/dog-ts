@@ -24,8 +24,8 @@ const query = `query{
         
       }`;
 
-export const getAllSellPoints =  () => {
-    const response  = fetch(`https://graphql.contentful.com/content/v1/spaces/${spaceId}/`, {
+export const getAllSellPoints = () => {
+    const response = fetch(`https://graphql.contentful.com/content/v1/spaces/${spaceId}/`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

@@ -26,7 +26,7 @@ export const ProductDetail = () => {
                     <h1>Cargando...</h1>
                 ) : (
                     <>
-                       <ProductDetailMap info={data[0]}/>
+                        <ProductDetailMap info={data[0]} />
                     </>
                 )}
             </div>

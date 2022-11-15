@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import "../styles/ProductsStyle.css"
-import {Props} from '../types/ProductTypes'
+import { Props } from '../types/ProductTypes'
 
 
 
-export const Product = (props : Props) => {
+export const Product = (props: Props) => {
     const { nombre, categoria, imagen } = props
     return (
         <div className='productContainer'>

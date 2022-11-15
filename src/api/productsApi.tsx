@@ -78,5 +78,4 @@ export const getProductDetail = async (item) => {
       return (data.productCollection.items);
     });
   return response
-
 }

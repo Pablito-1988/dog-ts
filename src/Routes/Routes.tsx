@@ -19,7 +19,7 @@ export const Routes = () => {
                 <Route path={'/contacto'} component={Contact} />
                 <Route path="/categoria/:categoria" component={Products} />
                 <Route path="/producto/:producto" component={ProductDetail} />
-                <Route path={'/puntos-de-venta'} component={SellPonits}/>
+                <Route path={'/puntos-de-venta'} component={SellPonits} />
             </Switch>
             <Footer />
         </div>

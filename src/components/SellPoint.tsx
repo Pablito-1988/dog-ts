@@ -1,4 +1,4 @@
-import {SellPointType} from '../types/SellPointsTypes'
+import { SellPointType } from '../types/SellPointsTypes'
 
 const SellPoint = (props: SellPointType) => {
   const { info: data } = props;

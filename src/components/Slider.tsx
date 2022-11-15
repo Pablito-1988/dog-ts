@@ -8,7 +8,7 @@ export const Slider = () => {
   const { data,
     isLoading,
   } = useQuery(["slider"], getSliderImg)
- 
+
   const [slideIndex, setSlideIndex] = useState<number>(1);
   const [sliderTime, setSliderTime] = useState<number>(5000);
 

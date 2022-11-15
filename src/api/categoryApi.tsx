@@ -32,6 +32,5 @@ export const getAllCategories = () => {
       return data.categoryCollection.items
     });
   return response
-
 }
 

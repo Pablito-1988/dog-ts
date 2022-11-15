@@ -26,11 +26,11 @@ export const Header = () => {
         </div>
         <div className="headerLogo">
           <Link to={"/"}>
-            <img 
-                 className="logoImg"
-                 src={require('../assets/DogPNG.png')}
-                 alt="logo"
-             />
+            <img
+              className="logoImg"
+              src={require('../assets/DogPNG.png')}
+              alt="logo"
+            />
           </Link>
         </div>
         <div className="headerSpace"></div>

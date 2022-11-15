@@ -1,14 +1,14 @@
 
 export type SellPointType = {
-    info: {
-      shopName: string
-      adress: string
-      phone: string
-      email: string
-      web: string
-      instagram: string
-      map: {
-        url: string
-      }
+  info: {
+    shopName: string
+    adress: string
+    phone: string
+    email: string
+    web: string
+    instagram: string
+    map: {
+      url: string
     }
   }
+}
