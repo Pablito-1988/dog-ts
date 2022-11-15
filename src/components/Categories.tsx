@@ -2,6 +2,7 @@ import { useQuery } from "react-query";
 import { getAllCategories } from "../api/categoryApi";
 import { Link } from 'react-router-dom'
 import "../styles/ProductsStyle.css"
+import {CategotyTypes} from '../types/CategoryTypes'
 
 const Categories = () => {
 
@@ -12,7 +13,7 @@ const Categories = () => {
     return (
         <div className='categoriesContainer'>
             <h1>CATALOGO</h1>
-            {!isLoading && data.map((e,i) => {
+            {!isLoading && data.map((e : CategotyTypes,i) => {
                 return (
                     <div className="category" key={i}>
                         <h3 className="categoryName">{e.categoryName}</h3>
