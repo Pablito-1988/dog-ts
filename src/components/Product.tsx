@@ -1,15 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import "../styles/ProductsStyle.css"
+import {Props} from '../types/ProductPropsTypes'
 
-export const Product = (props) => {
-  const  {nombre , categoria, imagen } = props 
+
+
+export const Product = (props : Props) => {
+    const { nombre, categoria, imagen } = props
     return (
         <div className='productContainer'>
-            <img className='productMainImg' src={imagen} alt={categoria} />
+            <img
+                className='productMainImg'
+                src={imagen}
+                alt={categoria} />
             <p>{nombre}</p>
             <Link to={`/producto/${nombre}`} >
-            <button className='moreInfoButton'>Mas info</button>
+                <button className='moreInfoButton'>Mas info</button>
             </Link>
         </div>
     );

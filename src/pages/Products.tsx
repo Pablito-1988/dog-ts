@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import { getAllProducts } from "../api/productsApi"
 import { useQuery } from 'react-query'
 import "../styles/ProductsStyle.css"
+import {ArrayofProducts} from '../types/ProductPropsTypes'
+
 
 export const Products = () => {
   const category = useParams();
@@ -24,7 +26,7 @@ export const Products = () => {
       <div className="productsWrapper">
         <h1>{category.categoria}</h1>
         <div className="allProducts">
-          {data.map((product) => {
+          {data.map((product : ArrayofProducts) => {
             return (
               <Product
                 key={product.productName}

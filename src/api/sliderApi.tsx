@@ -1,3 +1,4 @@
+
 const spaceId = "f5klpei59l37";
 const accessToken = "qFP0gtMR5kSIym8b9moI0USNmXys6etjPY2_jDNGTjQ";
 const query = `query{
@@ -11,9 +12,9 @@ const query = `query{
 }`
 
 
-export const getSliderImg = async ()=>{
+export const getSliderImg =  ()=>{
     
-    const response = await  fetch(`https://graphql.contentful.com/content/v1/spaces/${spaceId}/`, {
+    const response =   fetch(`https://graphql.contentful.com/content/v1/spaces/${spaceId}/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
