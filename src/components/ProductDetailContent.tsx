@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { ProductDetailType } from '../types/ProductTypes'
 
-export const ProductDetailMap = (props: ProductDetailType) => {
+export const ProductDetailMap = (props: ProductDetailType): JSX.Element => {
   const {
     productCategory,
     productName,

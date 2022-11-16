@@ -22,7 +22,7 @@ const query = `query {
       }
         `
 export const getAllCategories = async () => {
-  const response = fetch(`https://graphql.contentful.com/content/v1/spaces/${spaceId}/`, {
+  const response = await fetch(`https://graphql.contentful.com/content/v1/spaces/${spaceId}/`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -32,10 +32,10 @@ export const getAllCategories = async () => {
   })
     .then(async (response) => await response.json())
     .then(({ data, errors }) => {
-      if (errors.message) {
-        console.error(errors.message)
+      if (errors) {
+        console.error(errors)
       }
       return data.categoryCollection.items
     })
-  return await response
+  return response
 }
