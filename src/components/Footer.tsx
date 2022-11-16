@@ -1,7 +1,7 @@
-import React from 'react'
-import "../styles/FooterStyles.css"
+import React, { ReactElement } from 'react'
+import '../styles/FooterStyles.css'
 
-export const Footer = () => {
+export const Footer = (): ReactElement => {
   return (
     <>
       <footer>
@@ -14,14 +14,14 @@ export const Footer = () => {
           <div className="contactLinks">
             <a
               href="https://wa.me/5491165480864"
-              target={"_blank"}
+              target={'_blank'}
               rel="noreferrer"
             >
               <i className="fab fa-whatsapp"></i>
             </a>
             <a
               href="mailto:dog.growshop@gmail.com"
-              target={"_blank"}
+              target={'_blank'}
               rel="noreferrer"
             >
               <i className="fas fa-envelope"></i>

@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { Footer } from '../components/Footer'
@@ -9,9 +10,8 @@ import { ProductDetail } from '../pages/ProductDetail'
 import { SellPonits } from '../pages/SellPonits'
 import '../styles/MainStyle.css'
 
-
-export const Routes = () => {
-    return (
+export const Routes: React.FC = () => {
+  return (
         <div className='mainWrapper'>
             <Header />
             <Switch>
@@ -24,5 +24,5 @@ export const Routes = () => {
             <Footer />
         </div>
 
-    )
+  )
 }

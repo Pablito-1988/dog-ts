@@ -1,5 +1,4 @@
-
-export type SellPointType = {
+export interface SellPointType {
   info: {
     shopName: string
     adress: string

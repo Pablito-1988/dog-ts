@@ -1,25 +1,27 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+import React from 'react'
 import '../styles/ContactStyles.css'
 import emailjs from '@emailjs/browser'
 
+export default function Contact () {
+  const service = 'service_4cpysnp'
+  const template = 'template_xt34ltl'
+  const user = 'PMpHLbWXgjDfGqs2s'
 
-export default function Contact() {
-
-  const service = "service_4cpysnp"
-  const template = "template_xt34ltl"
-  const user = "PMpHLbWXgjDfGqs2s"
-
-  function sendEmail(e) {
-
-    e.preventDefault();
+  function sendEmail (e) {
+    e.preventDefault()
     emailjs.sendForm(service, template, e.target, user).then(
       (result) => {
-        console.log(result.text);
+        console.log(result.text)
       },
       (error) => {
-        console.log(error.text);
+        console.log(error.text)
       }
-    );
-    e.target.reset();
+    )
+    e.target.reset()
     console.log(e)
   }
 
@@ -73,4 +75,3 @@ export default function Contact() {
     </>
   )
 }
-

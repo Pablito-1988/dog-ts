@@ -1,13 +1,11 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import "../styles/ProductsStyle.css"
+import React, { ReactElement } from 'react'
+import { Link } from 'react-router-dom'
+import '../styles/ProductsStyle.css'
 import { Props } from '../types/ProductTypes'
 
-
-
-export const Product = (props: Props) => {
-    const { nombre, categoria, imagen } = props
-    return (
+export const Product = (props: Props): ReactElement<Props> => {
+  const { nombre, categoria, imagen } = props
+  return (
         <div className='productContainer'>
             <img
                 className='productMainImg'
@@ -18,5 +16,5 @@ export const Product = (props: Props) => {
                 <button className='moreInfoButton'>Mas info</button>
             </Link>
         </div>
-    );
+  )
 }

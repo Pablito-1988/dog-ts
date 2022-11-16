@@ -1,17 +1,16 @@
-import React from 'react'
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+
+import React, { ReactElement, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useState } from "react";
-import Dropdown from './DropDown';
+
+import Dropdown from './DropDown'
 import '../styles/HeaderStyles.css'
 
-
-
-export const Header = () => {
-  const [DropdownMenu, setDropdown] = useState(false);
+export const Header = (): ReactElement => {
+  const [DropdownMenu, setDropdown] = useState<boolean>(false)
   const handleDropdown = () => {
-    setDropdown(!DropdownMenu);
-
-  };
+    setDropdown(!DropdownMenu)
+  }
   return (
     <>
       <header>
@@ -25,9 +24,10 @@ export const Header = () => {
           </div>
         </div>
         <div className="headerLogo">
-          <Link to={"/"}>
+          <Link to={'/'}>
             <img
               className="logoImg"
+              // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
               src={require('../assets/DogPNG.png')}
               alt="logo"
             />
@@ -37,5 +37,5 @@ export const Header = () => {
       </header>
       {DropdownMenu ? <Dropdown change={handleDropdown} /> : null}
     </>
-  );
+  )
 }
