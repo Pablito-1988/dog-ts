@@ -15,20 +15,20 @@ const Categories = (): JSX.Element => {
   } = useQuery(['category'], getAllCategories)
 
   return (
-        <div className='categoriesContainer'>
-            <h1>CATALOGO</h1>
-            {!isLoading && data.map((e: CategotyTypes, i: number) => {
-              return (
-                    <div className="category" key={i}>
-                        <h3 className="categoryName">{e.categoryName}</h3>
-                        <Link to={`/categoria/${e.categoryName}`}>
-                            <img className="categoryImg" src={e.categoryImage.url} alt="categoria" />
-                        </Link>
-                    </div>
-              )
-            }
-            )}
-        </div>
+    <div className='categoriesContainer'>
+      <h1 className='mainTitle'>CATALOGO</h1>
+      {!isLoading && data.map((e: CategotyTypes, i: number) => {
+        return (
+          <div className="category" key={i}>
+            <Link to={`/categoria/${e.categoryName}`} className='categoryLink'>
+              <h3 className="categoryName">{e.categoryName}</h3>
+              <img className="categoryImg" src={e.categoryImage.url} alt="categoria" />
+            </Link>
+          </div>
+        )
+      }
+      )}
+    </div>
   )
 }
 

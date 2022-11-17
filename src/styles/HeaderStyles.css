@@ -81,3 +81,26 @@ a {
   color: green;
   text-decoration: dashed;
 }
+
+.navBarLinks{
+  width: 100%;
+  display: none;
+}
+.navBar{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.navBarUl{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+}
+.navBarLinkName{
+  font-size: 20px;
+}

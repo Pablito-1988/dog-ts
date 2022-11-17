@@ -42,7 +42,7 @@ const Dropdown = (props): JSX.Element => {
                 rel="noreferrer">
                 <i className="fab fa-instagram">
                 </i>
-                INSTAGRAM
+                {' '} INSTAGRAM
             </a>
         </div>
   )

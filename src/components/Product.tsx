@@ -11,7 +11,7 @@ export const Product = (props: Props): ReactElement<Props> => {
                 className='productMainImg'
                 src={imagen}
                 alt={categoria} />
-            <p>{nombre}</p>
+            <p className='productNameP'>{nombre}</p>
             <Link to={`/producto/${nombre}`} >
                 <button className='moreInfoButton'>Mas info</button>
             </Link>
