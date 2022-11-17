@@ -115,7 +115,7 @@
 }
 .pathLinks {
   display: flex;
-  width: 95%;
+  width: 90%;
   flex-wrap: wrap;
   justify-content: center;
 }

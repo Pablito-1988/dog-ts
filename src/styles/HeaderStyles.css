@@ -3,6 +3,7 @@ header {
   align-items: center;
   flex-direction: row;
   padding-top: 10px;
+  margin-bottom: 1.5rem;
 }
 .logoImg {
   width: 100px;
