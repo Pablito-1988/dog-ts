@@ -21,7 +21,7 @@ E-commerce desarrollado con TypeScript, dedicado a la venta de productos para el
    Inicia el servidor para que puedas ver el proyecto funcionando.
    Abrí http://localhost:3000 para ver el proyecto en tu navegador, si es que no tenes otro proyecto corriendo en dicho puerto. En ese caso ReactJs te sugiere otro puerto, por ejemplo: http://localhost:3001
 
-## Dependencias agregadas
+## Dependencias utilizadas
 
 ## npm i react-router-dom
 
@@ -46,3 +46,8 @@ Dependencia utilizada que provee Hooks para realizar fetch, guardar información
 ## npm i contentful
 
 Biblioteca de JavaScript para acceder a la información alojada en Contentful, y su implementación en diversas partes del sitio, como el Slider, las categorías, los productos, los puntos de venta, etc. 
+
+## npm i eslint
+
+ESLint es una herramienta para identificar e informar sobre patrones encontrados en el código ECMAScript/JavaScript.
+Link: [https://www.npmjs.com/package/eslint](https://www.npmjs.com/package/eslint)
