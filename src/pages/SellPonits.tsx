@@ -14,18 +14,18 @@ export const SellPonits: React.FC = () => {
 
   if (isLoading) {
     return (
-            <>
-                <div>
-                    <p>Cargando</p>
-                </div>
-            </>
+      <>
+        <div>
+          <p>Cargando</p>
+        </div>
+      </>
     )
   } else {
     return (
-            <div className="sellPointsWrapper">
-                <h1>PUNTOS DE VENTA</h1>
-                <SellPoint info={data[0]} />
-            </div>
+      <div className="sellPointsWrapper">
+        <h1>PUNTOS DE VENTA</h1>
+        <SellPoint info={data[0]} />
+      </div>
     )
   }
 }

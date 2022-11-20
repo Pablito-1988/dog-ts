@@ -10,10 +10,10 @@
   width: 95%;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 2rem;
   padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #e6e6e6;
+  border-radius: 15px;
+  background-color: white;
 }
 .locationMap {
   width: 100%;
@@ -41,7 +41,19 @@
   margin-top: 15px;
   margin-bottom: 5px;
 }
-#sellPointsIcons {
-  font-size: 20px;
-  color: #e6e6e6;
+
+#sellPointsIconInstagram{
+  font-size: 25px;
+  color: red
+}
+#sellPointsIconWeb {
+  font-size: 25px;
+  color: dodgerblue;
+}
+#sellPointsIconEmail{
+  font-size: 25px;
+  color: black;
+}
+.selPointName{
+  margin-bottom: 1.5rem;
 }

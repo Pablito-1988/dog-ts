@@ -13,20 +13,20 @@ interface props {
 
 export const NavBar = ({ links }: props): JSX.Element => {
   return (
-        <>
-            <nav className='navBar'>
-                <ul className='navBarUl'>
-                    {links.map((e, i) => {
-                      return (
-                            <li key={i}>
-                                <Link to={e.ruta}>
-                                     <p className='navBarLinkName'>{e.nombre}</p>
-                                </Link>
-                            </li>
-                      )
-                    })}
-                </ul>
-            </nav>
-        </>
+    <>
+      <nav className='navBar'>
+        <ul className='navBarUl'>
+          {links.map((e, i) => {
+            return (
+              <li key={i}>
+                <Link to={e.ruta}>
+                  <p className='navBarLinkName'>{e.nombre}</p>
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
+      </nav>
+    </>
   )
 }

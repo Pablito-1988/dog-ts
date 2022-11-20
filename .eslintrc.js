@@ -15,7 +15,8 @@ module.exports = {
       // If you don't want to extend any rules, you don't need an `extends` attribute.
       extends: [
         'plugin:@typescript-eslint/recommended',
-        'plugin:@typescript-eslint/recommended-requiring-type-checking'
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'prettier'
       ],
       plugins: ['react', '@typescript-eslint'],
       parserOptions: {
@@ -31,5 +32,7 @@ module.exports = {
     proyect: './tsconfig.json',
   }, */
 
-  rules: {}
+  rules: {
+    indent: ['error', 2]
+  }
 }

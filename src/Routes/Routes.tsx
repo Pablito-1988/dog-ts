@@ -12,17 +12,17 @@ import '../styles/MainStyle.css'
 
 export const Routes: React.FC = () => {
   return (
-        <div className='mainWrapper'>
-            <Header />
-            <Switch>
-                <Route path={'/'} exact component={Main} />
-                <Route path={'/contacto'} component={Contact} />
-                <Route path="/categoria/:categoria" component={Products} />
-                <Route path="/producto/:producto" component={ProductDetail} />
-                <Route path={'/puntos-de-venta'} component={SellPonits} />
-            </Switch>
-            <Footer />
-        </div>
+    <div className='mainWrapper'>
+      <Header />
+      <Switch>
+        <Route path={'/'} exact component={Main} />
+        <Route path={'/contacto'} component={Contact} />
+        <Route path="/categoria/:categoria" component={Products} />
+        <Route path="/producto/:producto" component={ProductDetail} />
+        <Route path={'/puntos-de-venta'} component={SellPonits} />
+      </Switch>
+      <Footer />
+    </div>
 
   )
 }

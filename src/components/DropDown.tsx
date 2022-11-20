@@ -22,29 +22,29 @@ const Dropdown = (props): JSX.Element => {
   ]
 
   return (
-        <div className='dropDownContent'>
-            {menuLInks.map<JSX.Element>(e => {
-              return (
-                    <Link
-                        key={e.nombre}
-                        to={e.ruta}
-                        // eslint-disable-next-line react/prop-types
-                        onClick={props.change}
-                        className='navLink' >
-                        {e.nombre}
-                    </Link>
-              )
-            })}
-            <a
-                className='navLink'
-                href="https://www.instagram.com/dog.growshop"
-                target={'_blank'}
-                rel="noreferrer">
-                <i className="fab fa-instagram">
-                </i>
-                {' '} INSTAGRAM
-            </a>
-        </div>
+    <div className='dropDownContent'>
+      {menuLInks.map<JSX.Element>(e => {
+        return (
+          <Link
+            key={e.nombre}
+            to={e.ruta}
+            // eslint-disable-next-line react/prop-types
+            onClick={props.change}
+            className='navLink' >
+            {e.nombre}
+          </Link>
+        )
+      })}
+      <a
+        className='navLink'
+        href="https://www.instagram.com/dog.growshop"
+        target={'_blank'}
+        rel="noreferrer">
+        <i className="fab fa-instagram">
+        </i>
+        {' '} INSTAGRAM
+      </a>
+    </div>
   )
 }
 export default Dropdown

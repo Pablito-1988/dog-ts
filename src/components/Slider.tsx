@@ -69,10 +69,10 @@ export const Slider: React.FC = () => {
                 </div>
               </>
 
-              )
+            )
             : (
               <p>Cargando</p>
-              )}
+            )}
         </div>
 
       </div>

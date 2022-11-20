@@ -6,12 +6,12 @@ import React from 'react'
 import '../styles/ContactStyles.css'
 import emailjs from '@emailjs/browser'
 
-export default function Contact () {
+export default function Contact() {
   const service = 'service_4cpysnp'
   const template = 'template_xt34ltl'
   const user = 'PMpHLbWXgjDfGqs2s'
 
-  function sendEmail (e) {
+  function sendEmail(e) {
     e.preventDefault()
     emailjs.sendForm(service, template, e.target, user).then(
       (result) => {

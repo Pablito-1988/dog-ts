@@ -55,7 +55,7 @@ export const Header = (): ReactElement => {
       </header>
       {DropdownMenu ? <Dropdown change={handleDropdown} links={menuLInks} /> : null}
       <div className='navBarLinks'>
-          <NavBar links={menuLInks}/>
+        <NavBar links={menuLInks} />
       </div>
     </>
   )

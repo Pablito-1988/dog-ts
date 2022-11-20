@@ -19,23 +19,23 @@ export const ProductDetail: React.FC = () => {
 
   if (isLoading) {
     return (
-            <>
-                <p>Loading</p>
-            </>
+      <>
+        <p>Loading</p>
+      </>
     )
   } else {
     return (
-            <div className="productDetailContainer">
-                {!data
-                  ? (
-                    <h1>Cargando...</h1>
-                    )
-                  : (
-                    <>
-                        <ProductDetailMap info={data[0]} />
-                    </>
-                    )}
-            </div>
+      <div className="productDetailContainer">
+        {!data
+          ? (
+            <h1>Cargando...</h1>
+          )
+          : (
+            <>
+              <ProductDetailMap info={data[0]} />
+            </>
+          )}
+      </div>
     )
   }
 }

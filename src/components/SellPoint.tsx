@@ -7,7 +7,7 @@ const SellPoint: React.FC<SellPointType> = (props: SellPointType) => {
 
   return (
     <div className="sellPointContainer">
-      <h2>{shopName}</h2>
+      <h2 className='selPointName'>{shopName}</h2>
       <a
         href="https://goo.gl/maps/h35yZF3RWbr6UsFv7"
         target="_blank"
@@ -21,13 +21,13 @@ const SellPoint: React.FC<SellPointType> = (props: SellPointType) => {
 
         <div className="sellPointSocial">
           <a href={`mailto: ${email} `}>
-            <i id="sellPointsIcons" className="far fa-envelope"></i>
-          </a>
-          <a href={`${web}`}>
-            <i id="sellPointsIcons" className="fas fa-globe"></i>
+            <i id="sellPointsIconEmail" className="far fa-envelope"></i>
           </a>
           <a href={`${instagram}`}>
-            <i id="sellPointsIcons" className="fab fa-instagram"></i>
+            <i id="sellPointsIconInstagram" className="fab fa-instagram"></i>
+          </a>
+          <a href={`${web}`}>
+            <i id="sellPointsIconWeb" className="fas fa-globe"></i>
           </a>
         </div>
       </div>
